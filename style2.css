@@ -1,0 +1,434 @@
+/* ;;;;;:;:::::: */
+.b {
+    color: #E65100 ;
+    color: #FFB300 ;
+    color: #FFF3E0 ;
+;
+ }
+/* ;;:::::::::::: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: black;
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    color: #ffffff;
+    background-color: #E65100;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: #FFB300;
+
+}
+
+.button {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-login {
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: #ffffff;
+
+}
+.btn-inscrire {
+    background-color: #E65100;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.btn-inscrire:hover, .btn-login:hover {
+    background-color: #E55A2B;
+}
+
+/* principal */
+.principal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banner-caterers.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.principal-content {
+    text-align: center;
+    color: white;
+}
+
+.principal-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: -450px;
+}
+
+.principal-description {
+    font-size: 20px;
+    color: white;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Filtres  */
+.filtres-section {
+    background-color: #FFF8E7;
+    padding: 40px 0;
+}
+
+.filtres-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.filtres-title {
+    font-size: 24px;
+    font-weight: bold;
+    color:black;
+}
+
+.filtres-categorie {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtre-select {
+    padding: 10px 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    color: #333333;
+}
+
+.btn-filtrer {
+    background-color: #FF6B35;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: auto;
+    
+}
+
+.btn-filtrer:hover {
+    background-color: #E55A2B;
+}
+
+.btn-reinitialiser {
+    background-color: white;
+    color: #000000;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: auto;
+    
+}
+.special-text {
+    text-align: left;
+}
+
+/* Traiteurs  */
+.traiteurs-section {
+    background-color: #FFF8E7;
+    padding: 60px 0;
+}
+
+.traiteurs-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    padding: 30px 0 ;
+    border-radius: 80px;
+}
+
+.traiteur-card-1 {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 1200px;
+    
+}
+.traiteur-card-2 {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 1200px;
+}
+
+.traiteur-img {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.traiteur-image {
+    width: 350px;
+    height: 250px;
+    margin-top: auto;
+}
+
+.verifier {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+ .info-traiteur {
+    padding: 25px;
+} 
+
+ .traiteur-experience {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.nom-traiteur {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 15px;
+
+}
+.traiteur-specialites {
+    margin-bottom: 15px;
+    margin-right: 8px;
+}
+
+.specialite {
+    font-size: 16px;
+    color: #000000;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.nationalite {
+    background-color: #eeeeee;
+    color: #000000;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.traiteur-contact {
+    margin-bottom: 20px;
+}
+
+.traiteur-phone {
+    font-size: 14px;
+    color: #161616;
+}
+
+.bas-traiteur{
+    display: flex; 
+    margin-right: -500px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 4px;
+} 
+
+/* etoile et valeur */
+.traiteur {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    right: 10px;
+    
+}
+
+.valeur{
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.btn-profil {
+    background-color: #1A1A2E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: -55px;
+}
+
+.btn-profil:hover {
+    background-color: #2A2A3E;
+} 
+
+/* appel a devenir Traiteur */
+.appel-traiteur {
+    background-image: linear-gradient(rgb(141, 98, 4, 0.6), rgba(107, 61, 1, 0.863)), url(images/banner-head-accueil.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    text-align: center;
+    margin-top: -55px;
+    margin-bottom: 35px;
+}
+
+.appel-traiteur-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.appel-traiteur-title {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.appel-traiteur-description {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px; 
+}
+
+
+.appel-devenir-traiteur {
+    background-color: white;
+    color: #FF6B35;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    border-style: none;
+    transition: 0.4s  ;
+   
+}
+
+
+
+/* footer */
+.footer {
+    background-color: #1A1A2E;
+    padding: 60px 0 20px;
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #CCCCCC;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.footer-text {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-links {
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    color: #ffffff;
+    font-size: 14px;
+}
+  
