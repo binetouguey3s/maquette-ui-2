@@ -1,3 +1,4 @@
+/* Mise en page en commun avec les autres pages  */
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +16,9 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+/* Fin mise en page en commun avec les autres pages  */
 
-/* debut navigation */
-
+/* Debut navigation en commun avec les autres pages */
 
 .header {
     background-color: #ffffff;
@@ -72,6 +73,8 @@ body {
     cursor: pointer;
     background-color: transparent;
     transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
 }
 .btn-inscrire {
     background-color: #FF6B35;
@@ -89,7 +92,7 @@ body {
     background-color: #E55A2B;
 }
 
-/* fin navigation */
+/* fin navigation en commun avec les autres pages*/
 
 /* principal */
 .principal {
@@ -123,21 +126,16 @@ body {
     color: white;
     text-align: left;
     margin-left: 16px;
-
 }
+/* fin principal */
 
 /* formulaire */
-
-
 .formulaire {
     display: grid;
     place-items: center; 
     padding: 60px 0;
     background-color: #fffaeb;
 }
-
-
-
 
 .form {
     background-color: rgb(245, 233, 168);
@@ -147,7 +145,6 @@ body {
     flex-direction: column;
 }
 
-
 .grid-0 {
     gap: 10px; 
     align-items: center;
@@ -156,7 +153,6 @@ body {
     background-color: #ffffff;
 
 }
-
 
 /* informations de base */
 .info-base,
@@ -169,7 +165,6 @@ body {
     padding: 30px;
     margin-bottom: 30px;
 }
-
 
 .infos-pro, .info-contact, .profil {
     /* padding: 30px;  
@@ -206,23 +201,27 @@ label {
 }
 
 /* les inputs */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="tel"],
-input[type="number"] {
+input[type="text"], input[type="password"], input[type="tel"], input[type="number"] {
     width: 600px;
     height: 30px;
     padding: 22px;
     border-radius: 5px;
     font-size: 14px;
     color: #333333;
-    background-color: white;
-    gap: 10px
-    ;
-    
+    background-color: rgb(255, 255, 255);
+    gap: 10px;  
 }
-
+input[type="email"] {
+    margin-left: 30px;
+    width: 600px;
+    height: 30px;
+    padding: 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333333;
+    background-color: rgb(255, 255, 255);
+    gap: 10px;  
+}
 
 /* select */
 select {
@@ -272,8 +271,6 @@ input[type="checkbox"] + label {
     font-weight: normal;
     cursor: pointer;
 }
-
-
 
 /* grids */
 .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10 {
@@ -381,11 +378,6 @@ input[type="checkbox"] + label {
     margin-right: 790px;
 }
 
-
-
-
-
-
 /* inscrire */
 /* .btn-inscrire .profil {
     background-color: #FF6B35;
@@ -413,14 +405,10 @@ input[type="checkbox"] + label {
     align-self: flex-end;
     margin-top: 20px;
 }
-
-
-
-
-
 /* fin formulaire */
 
-/* footer */
+
+/* footer en commun avec les autres pages */
 .footer {
     background-color: #1A1A2E;
     padding: 60px 0 20px;
@@ -490,7 +478,7 @@ input[type="checkbox"] + label {
     font-size: 14px;
 }
   
-
+/* fin footer */
 
 
 

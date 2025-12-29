@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: black;
+    background-color: rgb(214, 214, 214);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+
+.header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #FFB300;
+
+}
+
+.button {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-login {
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: #ffffff;
+
+}
+.btn-inscrire {
+    background-color: #d97706;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.btn-inscrire:hover, .btn-login:hover {
+    background-color: #E55A2B;
+}
+
+/* CONTENU PRINCIPAL */
+.contenu-principal {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 20px;
+    background-color: rgba(234, 234, 234, 0.96);
+}
+
+.conteneur-connexion {
+    width: 100%;
+    max-width: 500px;
+}
+
+.carte-connexion {
+    background-color: #f9fafb;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titre-connexion {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.formulaire-connexion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.groupe-formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.groupe-formulaire label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222528;
+}
+
+.champ-saisie {
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    transition: border-color 0.3s;
+}
+
+.options-formulaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.etiquette-case {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #374151;
+    cursor: pointer;
+}
+
+.case-cocher {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.mot-passe-oublie {
+    color: #d97706;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.mot-passe-oublie:hover {
+    color: #b45309;
+    text-decoration: underline;
+}
+
+.lien-inscription {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.lien-inscription a {
+    color: #d97706;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.lien-inscription a:hover {
+    color: #b45309;
+    text-decoration: underline;
+}
+
+.bouton-connexion {
+    background-color: #d97706;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.bouton-connexion:hover {
+    background-color: #b45309;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1A1A2E;
+    padding: 60px 0 20px;
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #CCCCCC;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.footer-text {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-links {
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    color: #ffffff;
+    font-size: 14px;
+}
+  
