@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail Traiteur - Star Buffet</title>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">        
+        <div class="container">            
+            <div class="header-content">
+                <div class="img-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" height="100" width="90"></a>
+                </div>
+                <button class="cacher">
+                    <i class="fa-solid fa-list" style="color: #7c8088;"></i>
+                </button>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Accueil</a>  
+                    <a href="index.html#restaurants" class="nav-link">Restaurants</a>
+                    <a href="index.html#cours" class="nav-link">Cours de Cuisine</a>
+                    <a href="traiteurs.html" class="nav-link active">Traiteurs</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="button">
+                    <a href="formulaire-authentification.html" class="btn-login">Connexion</a>
+                    <a href="inscription-traiteur.html" class="btn-inscrire">Inscription</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Fin navigation -->
+
+    <!-- Image principale -->
+    <div class="principal-detail">
+        <div class="container">
+            <div class="principal-content-detail">
+                <!-- Section de notation en bas de l'image -->
+                <div class="rating-section">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="valeur">0.0/5</span>
+                    <span class="verified"> 
+                        <i class="fa-solid fa-circle-check"></i> 
+                        Vérifié <br> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin image principale -->
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Layout en deux colonnes -->
+            <div class="content-layout">
+                <!-- Colonne gauche -->
+                <div class="left-column">
+                    <!-- À propos -->
+                    <section class="info-section">
+                        <h2 class="section-title">À propos</h2>
+                        <p class="section-text">Nam ex nulla similiq</p>
+                    </section>
+
+                    <!-- Spécialités -->
+                    <section class="info-section">
+                        <h2 class="section-title">Spécialités</h2>
+                        <div class="tags">
+                            <span class="tag">Française</span>
+                            <span class="tag">Indienne</span>
+                        </div>
+                    </section>
+
+                    <!-- Services proposés -->
+                    <section class="info-section">
+                        <h2 class="section-title">Services proposés</h2>
+                        <ul class="services-list">
+                            <li class="service-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Mariage</span>
+                            </li>
+                            <li class="service-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Anniversaire</span>
+                            </li>
+                            <li class="service-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cocktails</span>
+                            </li>
+                            <li class="service-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cuisine sur mesure</span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <!-- Colonne droite -->
+                <div class="right-column">
+                    <!-- Contact -->
+                    <section class="info-section">
+                        <h2 class="section-title">Contact</h2>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Minima eum aliquip a</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (684) 758-7777</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>dss@ds.ds</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Expérience -->
+                    <section class="info-section">
+                        <h2 class="section-title">Expérience</h2>
+                        <div class="experience-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>1979 ans d'expérience</span>
+                        </div>
+                    </section>
+
+                    <!-- Langues parlées -->
+                    <section class="info-section">
+                        <h2 class="section-title">Langues parlées</h2>
+                        <div class="tags">
+                            <span class="tag">Français</span>
+                            <span class="tag">Italien</span>
+                            <span class="tag">Arabe</span>
+                        </div>
+                    </section>
+
+                    <!-- Bouton Contacter -->
+                    <div class="contact-button-container">
+                        <button class="btn-contacter">
+                            <i class="fas fa-phone"></i>
+                            Contacter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Fin contenu principal -->
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">À propos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Qui sommes-nous</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="traiteurs.html">Traiteurs</a></li>
+                        <li><a href="index.html#restaurants">Restaurants</a></li>
+                        <li><a href="index.html#cours">Cours de cuisine</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Espace Pro</h3>
+                    <ul class="footer-links">
+                        <li><a href="inscription-traiteur.html">Devenir partenaire</a></li>
+                        <li><a href="formulaire-authentification.html">Connexion</a></li>
+                        <li><a href="#">FAQ Professionnels</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact</h3>
+                    <p class="footer-text">Star Buffet</p>
+                    <p class="footer-text">Dakar, Sénégal</p>
+                    <p class="footer-text">Tél: +221 77 000 00 00</p>
+                    <p class="footer-text">Email: contact@starbuffet.com</p>
+                    
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy;2025 Star Buffet. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin footer -->
+</body>
+</html>
+

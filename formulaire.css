@@ -1,0 +1,527 @@
+/* ===== MOBILE FIRST ===== */
+
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: black;
+    background-color: rgb(214, 214, 214);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* Header Mobile */
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.img-logo {
+    align-self: flex-start;
+}
+
+/* Navigation mobile - cachée par défaut */
+.nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav.active {
+    display: flex;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    transition: color 0.3s;
+}
+
+.nav-link:last-child {
+    border-bottom: none;
+}
+
+.nav-link:hover {
+    color: #FFB300;
+}
+
+/* Menu burger pour mobile */
+.menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Boutons header mobile */
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn-login, .btn-inscrire {
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+.btn-login {
+    color: rgb(0, 0, 0);
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+.btn-inscrire {
+    background-color: #d97706;
+    color: white;
+    border: none;
+}
+
+.btn-inscrire:hover, .btn-login:hover {
+    background-color: #E55A2B;
+    color: white;
+}
+
+/* CONTENU PRINCIPAL - Mobile */
+.contenu-principal {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    background-color: rgba(234, 234, 234, 0.96);
+}
+
+.conteneur-connexion {
+    width: 100%;
+    max-width: 100%;
+}
+
+.carte-connexion {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.titre-connexion {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.formulaire-connexion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.groupe-formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.groupe-formulaire label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222528;
+}
+
+.champ-saisie {
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+.champ-saisie:focus {
+    outline: none;
+    border-color: #d97706;
+}
+
+.options-formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.etiquette-case {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #374151;
+    cursor: pointer;
+}
+
+.case-cocher {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.mot-passe-oublie {
+    color: #d97706;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-align: right;
+}
+
+.mot-passe-oublie:hover {
+    color: #b45309;
+    text-decoration: underline;
+}
+
+.lien-inscription {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.lien-inscription a {
+    color: #d97706;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.lien-inscription a:hover {
+    color: #b45309;
+    text-decoration: underline;
+}
+
+.bouton-connexion {
+    background-color: #d97706;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.bouton-connexion:hover {
+    background-color: #b45309;
+}
+
+/* FOOTER Mobile */
+.footer {
+    background-color: #1A1A2E;
+    padding: 40px 0 20px;
+    color: white;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #CCCCCC;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FF6B35;
+}
+
+.footer-text {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-links i {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-links i:hover {
+    color: #FFB300;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/*MEDIA QUERY TABLETTES (768px+) */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+        gap: 20px;
+    }
+    
+    .nav-link {
+        border-bottom: none;
+        padding: 5px 0;
+    }
+    
+    .button {
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 10px;
+    }
+    
+    .btn-login, .btn-inscrire {
+        width: auto;
+        padding: 10px 20px;
+    }
+    
+    .contenu-principal {
+        padding: 80px 20px;
+    }
+    
+    .conteneur-connexion {
+        max-width: 450px;
+    }
+    
+    .carte-connexion {
+        padding: 40px;
+    }
+    
+    .titre-connexion {
+        font-size: 28px;
+    }
+    
+    .options-formulaire {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .bouton-connexion {
+        width: 100%;
+    }
+    
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .footer-column {
+        text-align: left;
+    }
+    
+    .social-links {
+        justify-content: flex-start;
+    }
+}
+
+/* MEDIA QUERY DESKTOP (992px+) */
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .contenu-principal {
+        padding: 100px 20px;
+    }
+    
+    .conteneur-connexion {
+        max-width: 500px;
+    }
+    
+    .titre-connexion {
+        font-size: 32px;
+    }
+    
+    .carte-connexion {
+        padding: 50px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+}
+
+/*  MEDIA QUERY GRANDS ÉCRANS (1200px+) */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+    
+    .contenu-principal {
+        padding: 120px 20px;
+    }
+}
+
+/*  STYLES SPÉCIAUX POUR AMÉLIORER L'UX MOBILE */
+@media screen and (max-width: 767px) {
+    /* Évite le zoom automatique sur iOS */
+    input[type="email"],
+    input[type="password"] {
+        font-size: 16px;
+    }
+    
+    /* Améliore l'espacement pour le toucher */
+    .btn-login, .btn-inscrire,
+    .bouton-connexion,
+    .nav-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Ajuste la hauteur des champs pour le toucher */
+    .champ-saisie {
+        min-height: 44px;
+    }
+}
+
+/* ANIMATIONS ET TRANSITIONS*/
+.nav-link,
+.btn-login,
+.btn-inscrire,
+.champ-saisie,
+.bouton-connexion,
+.mot-passe-oublie,
+.lien-inscription a,
+.footer-links a,
+.social-links i {
+    transition: all 0.3s ease;
+}
+
+/* STYLES POUR LES ÉTATS */
+.champ-saisie:focus {
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.2);
+}
+
+.bouton-connexion:active {
+    transform: translateY(2px);
+}
+
+/* STYLES POUR LES MESSAGES D'ERREUR (à ajouter si nécessaire)  */
+.groupe-formulaire.error .champ-saisie {
+    border-color: #dc2626;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 12px;
+    margin-top: 4px;
+    display: none;
+}
+
+.groupe-formulaire.error .error-message {
+    display: block;
+}
